@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frutiger Aero Avançado</title>
+
+<!-- Fonte Segoe UI / fallback Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  background-color: #7da4e8;
+  width: 100vw;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card individual */
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+}
+
+/* Imagem de fundo do card */
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover img {
+  opacity: 0.5;
+}
+
+/* Conteúdo do card */
+.card-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00cfff, #0077cc);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0077cc, #00cfff);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Frutiger Aero Avançado</h1>
+
+<div class="cards-container">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1581090700227-7e74c24ff21f?auto=format&fit=crop&w=800&q=80" alt="Futuristic panel">
+    <div class="card-content">
+      <h2>Holograma Digital</h2>
+      <p>Transparência, blur e efeitos de profundidade simulando interfaces futuristas.</p>
+      <a href="#" class="btn">Saiba Mais</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" alt="Abstract tech">
+    <div class="card-content">
+      <h2>Interface Abstrata</h2>
+      <p>Design minimalista e futurista, com cores suaves e sensação de leveza e modernidade.</p>
+      <a href="#" class="btn">Saiba Mais</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="Futuristic city">
+    <div class="card-content">
+      <h2>Cidade Futurista</h2>
+      <p>Cards com imagem de fundo e hover animado, transmitindo movimento e profundidade.</p>
+      <a href="#" class="btn">Saiba Mais</a>
+    </div>
+  </div>
+
+</div>
+<a href="frutigeraerosite.html">Voltar</a>
+</body>
+</html>

@@ -1,0 +1,110 @@
+html {
+    cursor: url(cursorbase.cur);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d9f0f6;
+    background-image: url(imagens/windows_vista_59.jpg);
+
+    /* deixa o texto visível sobre o fundo */
+
+    /* Fundo com imagem 
+    background-image: url("frutigerfundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f0f0f0; add dps
+    /* fallback */
+}
+
+h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color:  rgba(30, 30, 30, 0.6);  ;
+    margin-top: auto;
+    /* remove margens do h1 */
+    padding: 20px 0;
+    /* espaçamento vertical */
+    width: 100vw;
+    /* ocupa toda a largura da viewport */
+    box-sizing: border-box;
+
+   /* efeito de vidro */
+  backdrop-filter: blur(10px);  
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade Safari */
+  
+ 
+  
+  /* sombra suave para destaque */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.teste {
+  display: flex;
+  justify-content: center; /* centraliza as imagens na linha */
+  gap: 20px; /* espaço entre as imagens */
+}
+
+h2{
+    text-align: center;
+}
+
+.navbar {
+  display: flex; /* deixa os itens em linha */
+  justify-content: center; /* logo à esquerda, centro */
+  align-items: center; /* centraliza verticalmente */
+  background: rgba(30, 30, 30, 0.6); 
+  padding: 15px 40px; /* espaço interno */
+    border-radius: 12px; /* opcional: cantos arredondados */
+
+  backdrop-filter: blur(8px); /* efeito vidro / Aero */
+  position: sticky; /* fixa a barra ao rolar a página */
+  top: 0;
+  z-index: 100; /* fica acima do conteúdo */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra suave */
+    
+  backdrop-filter: blur(10px);  /* efeito de vidro */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade Safari */
+  margin-bottom: 30px;
+
+}
+
+.nav-links {
+  list-style: none; /* remove bullets */
+  display: flex; /* links na horizontal */
+  gap: 25px; /* espaçamento entre os links */
+}
+
+.nav-links li a {
+  text-decoration: none; /* remove sublinhado */
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px; /* “clicável” maior */
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.2); /* leve destaque */
+  transform: translateY(-2px); /* pequeno movimento */
+}
+
+
+.content-box {
+  width: 80%;               /* largura do bloco */
+  margin: 40px auto;        /* centraliza na página */
+  padding: 20px;            /* espaço interno */
+  border-radius: 12px;      /* cantos arredondados */
+  
+  background: rgba(20, 20, 20, 0.6); /* fundo escuro translúcido */
+  backdrop-filter: blur(10px);       /* efeito vidro */
+  -webkit-backdrop-filter: blur(10px);
+  
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* sombra */
+}
